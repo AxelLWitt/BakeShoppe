@@ -1,24 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
+import { ThemeContext } from './context/ThemeContext'; //this will be updated in the nav bar through the tap function
 import './App.css';
+import BodyComponents from './components/BodyComponents';
 
 function App() {
+  const [mode, setMode] = useState<'light'|'dark'>('light');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${mode}`}>
+      <BodyComponents mode={mode}/>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 interface HorizontalScrollProps {
   // Define props here. For instance:
@@ -19,4 +18,4 @@ const mapStateToProps = (state: any) => {
 
 const mapDispatchToProps = {};
 
-export default connect(mapStateToProps, mapDispatchToProps)(HorizontalScroll);
+export default HorizontalScroll
