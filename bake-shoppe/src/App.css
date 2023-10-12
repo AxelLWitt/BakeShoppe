@@ -2,7 +2,7 @@ body{
   margin:0;
   box-sizing: border-box;
   padding:0;
-
+  font-family: 'Roboto';
 }
 
 #root{
@@ -12,13 +12,13 @@ body{
 }
 
 h1, h2, h3, h4 ,h5, p, button{
-  font-family: SF Pro Text;
+  font-family: 'Roboto';
   letter-spacing: -0.165px;
 }
 /*Global Modifiers*/
 
 .light{
-  color: #FFF;
+  color: #F9F9F9;
 }
 
 .dark{
@@ -158,3 +158,5 @@ h1, h2, h3, h4 ,h5, p, button{
 .no-border{
   border:none;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
