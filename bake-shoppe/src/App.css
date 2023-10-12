@@ -1,1 +1,191 @@
+#root{
+  display:flex;
+  justify-content: center;
+  overflow-y: scroll;
+}
 
+h1, h2, h3, h4 ,h5, p, button{
+  font-family: SF Pro Text;
+  letter-spacing: -0.165px;
+}
+/*Global Modifiers*/
+
+.light{
+  color: #FFF;
+}
+
+.dark{
+ background-color:#222222;
+}
+
+.buttonClass{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
+  border:none;
+  width: 127px;
+  height: 28px;
+}
+
+/*Widget after sliding bar*/
+
+.teamClass{
+  display:flex;
+  flex-direction:column;
+  text-align: left; 
+  width: 363px;
+  height: 370px;
+  margin-top:23px;
+  margin-bottom:40px;
+}
+
+.teamModal{
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 10px 10px;
+  background: #CC5B67;
+}
+
+.textContainer{
+  margin-top:13px;
+  margin-left:11px;
+}
+
+.teamClassText{
+  max-width: 315px;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 15px;
+}
+
+.team{
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/*Modal With Three Pastry Displays*/
+
+.pastryDisplay{
+  width: 363px;
+  height: 390px;
+  border-radius: 10px;
+  background: #CC5B67;;
+  display:flex;
+  flex-direction:column;
+}
+
+.pastryCard{
+  height:129px;
+  width:363px;
+  border-bottom:1px solid #984A52;
+  justify-content:center;
+  flex-direction:row;
+}
+
+.pastryContainer{
+  margin:12px;
+  display:flex;
+}
+
+.pastryContainer h1{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin:0;
+}
+
+.pastryContainer h2{
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin:0;
+}
+
+.pastryContainer p{
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  margin-top:0;
+  margin-bottom:3px;
+}
+
+.pastryButton{
+  margin-top:8px;
+}
+
+.pastryPeekIcon{
+  width: 106px;
+  height: 106px;
+  border-radius: 10px;
+  margin-right:12px;
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.pastryContainer h1{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin:0;
+}
+
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px 0;
+  color: #999;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: SF Pro Text;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.165px;
+}
+
+.scroll-item {
+  display: inline-block;
+  flex: 0 0 auto;
+  margin-right: 16px;
+  text-align: center;
+}
+
+.scroll-image {
+  max-width: 150px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-label {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.no-border{
+  border:none;
+}
