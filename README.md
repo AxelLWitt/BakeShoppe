@@ -23,13 +23,15 @@ Making a website / App for our favorite bakery near us!
 
 ## Screenshots
 
-![image](https://prnt.sc/kCcgbd9waAgC)
+![image](https://github.com/AxelLWitt/BakeShoppe/blob/axel-body/Screenshot1.png)
 
-![image](https://prnt.sc/G17br--8HBRr)
+![image](https://github.com/AxelLWitt/BakeShoppe/blob/axel-body/Screenshot2.png)
 
-## Trello
+## Trello & Notion Development Boards
 
-https://trello.com/b/p1XNTgO4/breads-bakery
+[Trello](https://trello.com/b/p1XNTgO4/breads-bakery)
+
+[Notion](https://www.figma.com/proto/sqLvEsWQ4ZmRDdo3qzHvqm/Bakery-Shop-x-GA?node-id=8-201&starting-point-node-id=8%3A201&mode=design&t=D1JGfjGAWUeOqPWr-1)
 
 ## Code Examples
 
@@ -57,6 +59,11 @@ We love this bake shop!
 1. Launch up the application by clicking the link.
 2. Look and find your favorite baked goods!
 
+## How to install
+1. Fork and clone the repository.
+2. Run npm install in the terminal to install dependencies.
+3. Run npm start in the terminal to start the application.
+
 
 ## BUGS 
 1. 
@@ -65,6 +72,8 @@ We love this bake shop!
 * 
 
 # Credits 
+##
+- [Breads Bakery](https://www.breadsbakery.com/)
 ## UX Team
 
 - [Juliana Martinez](https://www.linkedin.com/in/juliana-martinez-ux-designer/)
