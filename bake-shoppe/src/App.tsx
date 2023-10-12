@@ -10,17 +10,15 @@ import Horizontal from './components/Horizontal';
 
 
 
-
 function App() {
   const { theme } = useTheme();
-
 
   return (
     <div className={`App ${theme === 'light' ? 'light-theme' : 'dark-theme'}`} id={theme}>
       <Navbar />
-      <Carousel/> 
+      <Carousel /> 
       <Horizontal/>
-      <BodyComponents mode={mode}/>
+      <BodyComponents />
       <Footer />
     </div>
   );

@@ -1,3 +1,10 @@
+body{
+  margin:0;
+  box-sizing: border-box;
+  padding:0;
+
+}
+
 #root{
   display:flex;
   justify-content: center;
@@ -72,6 +79,12 @@ h1, h2, h3, h4 ,h5, p, button{
 
 /*Modal With Three Pastry Displays*/
 
+.bodyContainer{
+  display:flex;
+  align-items: center;
+  flex-direction:column;
+}
+
 .pastryDisplay{
   width: 363px;
   height: 390px;
@@ -130,14 +143,6 @@ h1, h2, h3, h4 ,h5, p, button{
   margin-right:12px;
 }
 
-.scroll-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .pastryContainer h1{
   font-size: 14px;
