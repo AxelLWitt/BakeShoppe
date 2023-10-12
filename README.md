@@ -1,4 +1,4 @@
-# BakeShoppe
+# Breads Bakery
 
 ![image](https://github.com/AxelLWitt/BakeShoppe/blob/axel-body/home.jpeg)
 
@@ -23,9 +23,9 @@ Making a website / App for our favorite bakery near us!
 
 ## Screenshots
 
-![image]()
+![image](https://prnt.sc/kCcgbd9waAgC)
 
-![image]()
+![image](https://prnt.sc/G17br--8HBRr)
 
 ## Trello
 
