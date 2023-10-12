@@ -2,10 +2,6 @@ import React from 'react';
 import PastryCard from './PastryCard';
 
 
-interface WebPageMode {
-  mode: 'light'|'dark';
-}
-
 interface PastryItem {
   photo: string;
   name: string;
@@ -41,7 +37,7 @@ const pastryData: PastryItem[] = [
   },
 ];
 
-const PastrySelection: React.FC<WebPageMode> = ({ mode = 'light' }) => {
+const PastrySelection: React.FC = () => {
   const limitedData = pastryData.slice(0, 3);
   const pastryItems = limitedData.map((item, index) => {
     const removeUnderLine = item.noBorder ? 'no-border': ''
@@ -59,7 +55,7 @@ const PastrySelection: React.FC<WebPageMode> = ({ mode = 'light' }) => {
   });
 
   // Return your JSX with the mode class applied
-  return <div className={`${mode} pastryDisplay`}>{pastryItems}</div>;
+  return <div className={`pastryDisplay`}>{pastryItems}</div>;
 };
 
 export default PastrySelection;

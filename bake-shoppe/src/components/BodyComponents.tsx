@@ -3,20 +3,15 @@ import MainTeam from './MainTeam'
 import PastrySelection from './PastrySelection'
 import SplitSelection from './SplitSelection'
 
-interface WebPageMode {
-    mode : 'light' | 'dark'
-}
-
-const BodyComponents: React.FC<WebPageMode> = ({mode = 'light'}:WebPageMode) => {
-
+const BodyComponents: React.FC = () => {
 
   return (
-    <div>
-        <MainTeam mode={mode}/>
-        <PastrySelection mode={mode}/>
-        <SplitSelection mode={mode}/>
+    <div className='bodyContainer'>
+        <MainTeam />
+        <PastrySelection />
+        <SplitSelection />
     </div>
   )
 }
 
-export default BodyComponents
+export default BodyComponents;

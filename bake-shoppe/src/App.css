@@ -1,3 +1,10 @@
+body{
+  margin:0;
+  box-sizing: border-box;
+  padding:0;
+
+}
+
 #root{
   display:flex;
   justify-content: center;
@@ -71,6 +78,12 @@ h1, h2, h3, h4 ,h5, p, button{
 }
 
 /*Modal With Three Pastry Displays*/
+
+.bodyContainer{
+  display:flex;
+  align-items: center;
+  flex-direction:column;
+}
 
 .pastryDisplay{
   width: 363px;

@@ -1,10 +1,6 @@
 import React from 'react'
 
-interface WebPageMode {
-    mode: 'light' |'dark'
-}
-
-const PastryWidget:React.FC<WebPageMode> = () => {
+const PastryWidget:React.FC = () => {
   return (
     <div>
         {/* <img src = ></img> */}

@@ -1,27 +1,27 @@
-import React from 'react'
+import React from 'react';
+import { useTheme } from './ThemeContext';
+import '../App.css'
 
+const MainTeam: React.FC = () => {
+  const { theme } = useTheme();
 
-interface WebPageMode {
-    mode: 'light' | 'dark'
-}
+  const teamClass: string = 'teamClass';
+  const teamClassText: string = 'teamClassText';
+  const teamModal: string = 'teamModal';
+  const buttonClass: string = 'buttonClass';
 
-const MainTeam: React.FC<WebPageMode> = ({mode = 'light'}) => {
-  const teamClass:string = 'teamClass'
-  const teamClassText:string = 'teamClassText'
-  const teamModal:string = 'teamModal'
-  const buttonClass:string = 'buttonClass'
   return (
-    <div className={`${mode} ${teamClass}`}>
+    <div className={`${theme} ${teamClass}`}>
         <img src={process.env.PUBLIC_URL + '/photos/TeamPhoto.png'} alt='Team Photo' className='teamPhoto'/>
-        <div className={`${mode} ${teamModal}`}>
+        <div className={`${theme} ${teamModal}`}>
           <div className='textContainer'>
             <h1 className='team'>Baked Fresh Daily with Love</h1>
-            <p className={`${teamClassText}`}>Honey-sweetened sourdough roll studded with hazelnuts, cranberries, dates and seeds.</p>
+            <p className={`${teamClassText}`}>Honey-sweetened sourdough roll studded with hazelnuts, cranberries, dates, and seeds.</p>
             <button className={`${buttonClass}`}>Find a Store</button>
-            </div>
+          </div>
         </div>
     </div>
-  )
+  );
 }
 
-export default MainTeam
+export default MainTeam;
