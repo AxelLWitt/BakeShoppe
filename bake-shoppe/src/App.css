@@ -111,7 +111,7 @@ h1, h2, h3, h4 ,h5, p, button{
   width: 363px;
   height: 390px;
   border-radius: 10px;
-  /* background: #CC5B67;; */
+  overflow:hidden;
   display:flex;
   flex-direction:column;
 }
@@ -192,6 +192,7 @@ h1, h2, h3, h4 ,h5, p, button{
   border-radius:10px;
   background-color:#CC5B67;
   height: 316px;
+  overflow:hidden;
 }
 
 .pastryWidgetText{
@@ -219,7 +220,6 @@ h1, h2, h3, h4 ,h5, p, button{
 
 .widgetPhoto{
   width:100%;
-  border-radius:10px 10px 0 0;
   height: 158px;
 }
 
