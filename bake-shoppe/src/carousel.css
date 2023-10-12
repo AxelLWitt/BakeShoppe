@@ -16,7 +16,7 @@
 .image-container {
     max-width: 393px;
     max-height: 250px;
-    overflow: hidden;
+    overflow-x:auto;
 }
 
 .image {
