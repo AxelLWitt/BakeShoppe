@@ -1,5 +1,4 @@
 
-
 export default function Horizontal() {
   const items = [
     { src: '/Babka.png', label: 'Babka' },
