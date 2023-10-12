@@ -64,8 +64,8 @@ We love this bake shop!
 ## Next Steps
 * 
 
-## Credits 
-# UX Team
+# Credits 
+## UX Team
 
 - [Juliana Martinez](https://www.linkedin.com/in/juliana-martinez-ux-designer/)
 - [Rosemary Paredes](https://www.linkedin.com/in/rosemarypv/)
@@ -74,7 +74,7 @@ We love this bake shop!
 
 
 
-# SEI Team
+## SEI Team
 
 - [Axel Wittmann](https://www.linkedin.com/in/axel-wittmann-1b0a3b1b9/)
 - [Joshua Morgan](https://www.linkedin.com/in/joshmorgan1992/)
