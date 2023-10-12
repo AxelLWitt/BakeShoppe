@@ -13,7 +13,9 @@
   flex-direction:column;
 } */
 
-
+.light-theme, .dark-theme {
+  transition: all 300ms ease;
+}
 
 .light-theme {
   background-color: #F9F9F9;
@@ -23,6 +25,16 @@
 .dark-theme {
   background-color: #222222;
   width:100%;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background-color: #222222;
+  color: #ffffff;
 }
 
 .navbar {
@@ -92,6 +104,7 @@ ul{
   margin-left:10px;
 }
 
+
 .footer img {
   width: 137px;
   margin-left: 15px;
@@ -99,17 +112,9 @@ ul{
   flex-shrink: 0;
 }
 
-/* .footer li{
-  color: #000;
-  text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: SF Pro Text;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  letter-spacing: -0.165px;
-} */
+.dark-mode li {
+  color: #ffffff;
+}
 
 About {
   margin: 10px;
