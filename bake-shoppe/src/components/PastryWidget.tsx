@@ -17,7 +17,7 @@ const PastryWidget:React.FC<PastryCardProps> = ({photo, name, description1, desc
             <img src={photo} className='widgetPhoto'></img>
           </div>
           <div className='pastryWidgetText'>
-                <h1>{name}</h1>
+                <h1 className='pastryName'>{name}</h1>
                 <p>{description1}</p>
                 <p>{description2}</p>
                 <p>{description3}</p>
