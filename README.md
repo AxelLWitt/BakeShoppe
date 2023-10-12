@@ -65,8 +65,11 @@ We love this bake shop!
 3. Run npm start in the terminal to start the application.
 
 
+
 ## BUGS 
-1. 
+1. Do check to see if react-slick is properly installed along with slick carousel.
+```npm install slick-carousel --save```
+```npm install react-slick --save```
 
 ## Next Steps
 * 
@@ -74,6 +77,9 @@ We love this bake shop!
 # Credits 
 ##
 - [Breads Bakery](https://www.breadsbakery.com/)
+- [React Slick](https://react-slick.neostack.com/)
+- [Slick Carousel](https://kenwheeler.github.io/slick/)
+
 ## UX Team
 
 - [Juliana Martinez](https://www.linkedin.com/in/juliana-martinez-ux-designer/)
