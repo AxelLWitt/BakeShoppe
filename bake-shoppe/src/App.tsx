@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-    <div className="App" id={theme}>
+    <div className={`App ${theme === 'light' ? 'light-theme' : 'dark-theme'}`} id={theme}>
       <Navbar />
       <Footer />
     </div>

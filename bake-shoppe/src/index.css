@@ -5,11 +5,12 @@
 }
 
 
-#light .App {
+
+.light-theme {
   background-color: #F9F9F9;
 }
 
-#dark .App {
+.dark-theme {
   background-color: #222222;
 }
 
@@ -17,7 +18,6 @@
   width: 393px;
   height: 60px;
   flex-shrink: 0;
-  background-color: #222;
   display: flex;
   justify-content: space-between;
 }
