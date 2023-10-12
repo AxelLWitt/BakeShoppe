@@ -1,19 +1,27 @@
-import React, {useState} from 'react';
+import React from 'react';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import { useTheme } from './components/ThemeContext';
 import logo from './logo.svg';
 import './App.css';
-import { ThemeContext } from './context/ThemeContext'
 import BodyComponents from './components/BodyComponents';
 import Carousel from './components/Carousel'
 import Horizontal from './components/Horizontal';
 
+
+
+
 function App() {
-  const [mode, setMode] = useState<'light'|'dark'>('light');
+  const { theme } = useTheme();
+
 
   return (
-    <div className={`App ${mode}`}>
+    <div className={`App ${theme === 'light' ? 'light-theme' : 'dark-theme'}`} id={theme}>
+      <Navbar />
       <Carousel/> 
       <Horizontal/>
       <BodyComponents mode={mode}/>
+      <Footer />
     </div>
   );
 }
