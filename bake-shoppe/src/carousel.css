@@ -1,6 +1,6 @@
 .fullcarousel {
     display: flex;
-    width: 393px;
+    width: 100%;
     height: 250px;
     flex-shrink: 0;
     align-items: center;
@@ -10,6 +10,11 @@
 .slider {
     width: 100%;
     height: 100%;
+}
+
+.slick-slide img{
+    width:100%;
+    height:100%;
 }
 
 .image-container {
