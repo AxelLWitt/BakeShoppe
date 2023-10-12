@@ -3,11 +3,11 @@ import MainTeam from './MainTeam'
 import PastrySelection from './PastrySelection'
 import SplitSelection from './SplitSelection'
 
-interface BodyComponentsProps {
+interface WebPageMode {
     mode : 'light' | 'dark'
 }
 
-const BodyComponents: React.FC<BodyComponentsProps> = ({mode = 'light'}:BodyComponentsProps) => {
+const BodyComponents: React.FC<WebPageMode> = ({mode = 'light'}:WebPageMode) => {
 
 
   return (

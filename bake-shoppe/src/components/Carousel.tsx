@@ -4,11 +4,12 @@ import image1 from "../assets/carousel1.png";
 import image2 from "../assets/carousel2.png";
 import image3 from "../assets/carousel3.png";
 import image4 from "../assets/carousel4.png";
-import "./carousel.css";
+import "../carousel.css";
 import "slick-carousel/slick/slick.css";
 import "./slick-theme.css";
 
-export default class PauseOnHoverSlider extends Component {
+export default class PauseOnHoverSlider extends Component   {
+  
   render() {
     const settings = {
       dots: true,

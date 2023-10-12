@@ -1,17 +1,24 @@
 import React from 'react'
 
 
-interface BodyComponentsProps {
+interface WebPageMode {
     mode: 'light' | 'dark'
 }
 
-const MainTeam: React.FC<BodyComponentsProps> = ({mode = 'light'}) => {
+const MainTeam: React.FC<WebPageMode> = ({mode = 'light'}) => {
+  const teamClass:string = 'teamClass'
+  const teamClassText:string = 'teamClassText'
+  const teamModal:string = 'teamModal'
+  const buttonClass:string = 'buttonClass'
   return (
-    <div>
-        <img src='../../images/Screenshot 2023-10-09 at 2.39 1.png'/>
-        <div>
-            <h1>'Main Text'</h1>
-            <p>'supoorting text'</p>
+    <div className={`${mode} ${teamClass}`}>
+        <img src={process.env.PUBLIC_URL + '/photos/TeamPhoto.png'} alt='Team Photo' className='teamPhoto'/>
+        <div className={`${mode} ${teamModal}`}>
+          <div className='textContainer'>
+            <h1 className='team'>Baked Fresh Daily with Love</h1>
+            <p className={`${teamClassText}`}>Honey-sweetened sourdough roll studded with hazelnuts, cranberries, dates and seeds.</p>
+            <button className={`${buttonClass}`}>Find a Store</button>
+            </div>
         </div>
     </div>
   )

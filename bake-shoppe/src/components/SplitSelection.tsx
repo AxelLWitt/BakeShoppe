@@ -1,14 +1,16 @@
 import React from 'react'
+import PastryWidget from './PastryWidget'
 
-interface SplitSelectionProps {
+interface WebPageMode {
     mode: 'light' | 'dark'
 }
-const SplitSelection: React.FC<SplitSelectionProps> = ({mode = 'light'}) => {
+
+const SplitSelection: React.FC<WebPageMode> = ({mode = 'light'}) => {
     
 
   return (
     <div>
-
+      <PastryWidget mode={mode} />
     </div>
   )
 }
