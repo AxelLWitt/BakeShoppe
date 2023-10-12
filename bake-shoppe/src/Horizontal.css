@@ -1,6 +1,6 @@
 .scroll-container {
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
     white-space: nowrap;
     padding: 20px 0;
     color: #999;
@@ -17,6 +17,7 @@
   .scroll-item {
     display: inline-block;
     flex: 0 0 auto;
+    margin-left:16px;
     margin-right: 16px;
     text-align: center;
   }
