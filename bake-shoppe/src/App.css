@@ -2,7 +2,7 @@ body{
   margin:0;
   box-sizing: border-box;
   padding:0;
-
+  font-family: 'Roboto';
 }
 
 #root{
@@ -12,20 +12,22 @@ body{
 }
 
 h1, h2, h3, h4 ,h5, p, button{
-  font-family: SF Pro Text;
+  font-family: 'Roboto';
   letter-spacing: -0.165px;
   margin:0;
   color:#fff;
 }
 /*Global Modifiers*/
 
-.light{
-  color: #FFF;
+.light-theme .buttonClass{
+  color: #000000;
 }
 
-.dark{
- background-color:#222222;
+.dark-theme .buttonClass{
+  color: white;
 }
+
+
 
 .buttonClass{
   font-size: 14px;
@@ -40,6 +42,18 @@ h1, h2, h3, h4 ,h5, p, button{
 }
 
 /*Widget after sliding bar*/
+
+.light-theme .teamModal,
+.light-theme .pastryCard {
+   background-color: #BB2031BA;
+   color:#ffffff;
+}
+
+.dark-theme .teamModal,
+.dark-theme .pastryCard {
+   background-color: #414141;
+   color:#ffffff;
+}
 
 .teamClass{
   display:flex;
@@ -57,6 +71,8 @@ h1, h2, h3, h4 ,h5, p, button{
   border-radius: 0px 0px 10px 10px;
   background: #CC5B67;
 }
+
+
 
 .textContainer{
   margin-top:13px;
@@ -95,7 +111,7 @@ h1, h2, h3, h4 ,h5, p, button{
   width: 363px;
   height: 390px;
   border-radius: 10px;
-  background: #CC5B67;;
+  /* background: #CC5B67;; */
   display:flex;
   flex-direction:column;
 }
@@ -103,7 +119,7 @@ h1, h2, h3, h4 ,h5, p, button{
 .pastryCard{
   height:129px;
   width:363px;
-  border-bottom:1px solid #984A52;
+  /* border-bottom:1px solid #984A52; */
   justify-content:center;
   flex-direction:row;
 }
@@ -222,3 +238,10 @@ h1, h2, h3, h4 ,h5, p, button{
   }
 
 @import url('Horizontal.css');
+
+.no-border{
+  border:none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
