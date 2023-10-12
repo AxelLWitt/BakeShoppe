@@ -1,0 +1,61 @@
+.fullcarousel {
+    display: flex;
+    width: 393px;
+    height: 250px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container {
+    border: 1px solid green;
+    max-width: 393px;
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    /* Remove the fixed height to let it adjust automatically */
+    object-fit: contain;
+}
+
+/* Style for the container of the slick dots */
+.slick-dots {
+    position: absolute;        /* Position the dots at the bottom of the slider */
+    bottom: 10px;              /* Adjust as needed to position the dots */
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;          /* Remove default list styles */
+    display: flex;             /* Align the dots horizontally */
+    justify-content: center;   /* Center the dots */
+    padding: 10px 20px;        /* Padding for the rectangular island */
+    background-color: rgba(255, 255, 255, 0.3);  /* Transparent white background */
+    border-radius: 15px;       /* Rounded corners for the island */
+}
+
+/* Style for each individual dot */
+.slick-dots li {
+    margin: 0 5px;             /* Spacing between dots */
+}
+
+/* Style for the button inside each dot */
+.slick-dots li button {
+    font-size: 0;              /* Hide the default number inside the button */
+    width: 10px;               /* Width of the dot */
+    height: 10px;              /* Height of the dot */
+    background-color: #333;    /* Color of the dot */
+    border: none;              /* Remove default border */
+    border-radius: 50%;        /* Make the dot circular */
+    outline: none;             /* Remove focus outline */
+    cursor: pointer;           /* Pointer cursor on hover */
+    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+}
+
+
