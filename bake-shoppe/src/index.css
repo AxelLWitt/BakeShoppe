@@ -38,12 +38,17 @@
 }
 
 .navbar {
-  width: 393px;
+  width: 100%;
   height: 60px;
-  margin-top:5px;
+  margin-top: 5px;
   flex-shrink: 0;
   display: flex;
   justify-content: space-between;
+  position: fixed; /* Fixes navbar to the top of the page */
+  top: 0; /* Anchors navbar to the top */
+  left: 0; /* Anchors navbar to the left, ensuring it spans the full width */
+  background-color: #fff; /* Add a background color to make the navbar content stand out */
+  z-index: 1000; /* Optional: raises the navbar above other elements */
 }
 
 .navbar-left {
@@ -91,7 +96,7 @@ height: 30px;
 }
 
 .footer{
-  width: 393px;
+  width: 100%;
   list-style:none;
   height: 400px;
   flex-shrink: 0;

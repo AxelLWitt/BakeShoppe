@@ -14,6 +14,8 @@ body{
 h1, h2, h3, h4 ,h5, p, button{
   font-family: 'Roboto';
   letter-spacing: -0.165px;
+  margin:0;
+  color:#fff;
 }
 /*Global Modifiers*/
 
@@ -36,6 +38,7 @@ h1, h2, h3, h4 ,h5, p, button{
   border:none;
   width: 127px;
   height: 28px;
+  color: #000;
 }
 
 /*Widget after sliding bar*/
@@ -83,12 +86,15 @@ h1, h2, h3, h4 ,h5, p, button{
   font-style: normal;
   font-weight: 300;
   line-height: 15px;
+  margin-bottom:15px;
 }
 
 .team{
   font-feature-settings: 'clig' off, 'liga' off;
   font-size: 14px;
   font-style: normal;
+  margin-top:5px;
+  margin-bottom:5px;
   font-weight: 600;
   line-height: normal;
 }
@@ -168,6 +174,68 @@ h1, h2, h3, h4 ,h5, p, button{
   margin:0;
 }
 
+/* For split cards -- side by side */
+
+.pastryWidgetContainer{
+  display:flex;
+  margin-top: 40px;
+  justify-content:space-between;
+  width: 362px;
+  flex-direction: row;
+  height: 316px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.pastryWidget{
+  width:170px;
+  border-radius:10px;
+  background-color:#CC5B67;
+  height: 316px;
+}
+
+.pastryWidgetText{
+  color: #FFF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: SF Pro Text;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px; /* 190% */
+  letter-spacing: -0.165px;
+  margin-left:5px;
+}
+
+.pastryWidget p{
+  font-size:10px;
+}
+.pastryWidget h1{
+  font-size:14px;
+}
+.pastryWidget h2{
+  font-size:12px;
+  margin-bottom:10px;
+}
+
+.widgetPhoto{
+  width:100%;
+  border-radius:10px 10px 0 0;
+  height: 158px;
+}
+
+.widgetButton{
+  width: 81.638px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.widgetDescription{
+  width:149px;
+}
+
+  .no-border{
+    border:none;
+  }
 
 @import url('Horizontal.css');
 
@@ -176,3 +244,4 @@ h1, h2, h3, h4 ,h5, p, button{
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
