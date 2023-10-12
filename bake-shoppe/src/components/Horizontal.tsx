@@ -1,10 +1,10 @@
 
 export default function Horizontal() {
   const items = [
-    { src: '/Babka.png', label: 'Babka' },
-    { src: '/Baguette.png', label: 'Baguette' },
-    { src: '/Cookies.png', label: 'Cookies' },
-    { src: '/Buns.png', label: 'Buns' }
+    { src: '/images/Babka.png', label: 'Babka' },
+    { src: '/images/Baguette.png', label: 'Baguette' },
+    { src: '/images/Cookies.png', label: 'Cookies' },
+    { src: '/images/Buns.png', label: 'Buns' }
   ];
 
   return (
