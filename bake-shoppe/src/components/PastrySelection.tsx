@@ -13,13 +13,13 @@ interface PastryItem {
 const pastryData: PastryItem[] = [
   {
     photo: '/photos/SwissRolls.png',
-    name: 'Swiss Museli Rolls',
+    name: 'Swiss Museli Roll',
     description: 'Honey-sweetened sourdough roll studded with hazelnuts, cranberries, dates, and seeds.',
     price: '4.95',
   },
   {
     photo: '/photos/CheeseSticks.png',
-    name: 'Cheese Straws',
+    name: 'Cheese Straw',
     description: 'Flaky pastry delicately intertwined with creamy Gouda cheese for a savory delight.',
     price: '3.50',
   },

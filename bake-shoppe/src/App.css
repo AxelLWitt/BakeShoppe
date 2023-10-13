@@ -1,57 +1,61 @@
-body{
-  margin:0;
+body {
+  margin: 0;
   box-sizing: border-box;
-  padding:0;
-  font-family: 'Roboto';
+  padding: 0;
+  font-family: "Roboto";
 }
 
-#root{
-  display:flex;
+#root {
+  display: flex;
   justify-content: center;
   overflow-y: scroll;
 }
 
-h1, h2, h3, h4 ,h5, p, button{
-  font-family: 'Roboto';
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+button {
+  font-family: "Roboto";
   letter-spacing: -0.165px;
-  margin:0;
-  color:#fff;
+  margin: 0;
+  color: #fff;
 }
 
 /*Global Modifiers*/
 
-
-.light-theme .buttonClass{
+.light-theme .buttonClass {
   color: #000000;
 }
 
-.light-theme .buttonClass:active{
-  background-color:pink;
-  color:white;
+.light-theme .buttonClass:active {
+  background-color: pink;
+  color: white;
 }
 
-.dark-theme .buttonClass{
+.dark-theme .buttonClass {
   color: #ffffff;
   background-color: #222222;
 }
 
-.dark-theme .buttonClass:active{
+.dark-theme .buttonClass:active {
   color: black;
-  background:white;
+  background: white;
 }
 
-.pastryContainer .buttonClass{
+.pastryContainer .buttonClass {
   margin-top: 10px;
 }
 
-
-.buttonClass{
+.buttonClass {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   border-radius: 100px;
-  border:none;
+  border: none;
   width: 127px;
   height: 28px;
   color: #000;
@@ -61,141 +65,138 @@ h1, h2, h3, h4 ,h5, p, button{
 
 .light-theme .teamModal,
 .light-theme .pastryCard {
-   background-color: #BB2031BA;
-   color:#ffffff;
+  background-color: #bb2031ba;
+  color: #ffffff;
 }
 
 .dark-theme .teamModal,
 .dark-theme .pastryCard {
-   background-color: #414141;
-   color:#ffffff;
+  background-color: #414141;
+  color: #ffffff;
 }
 
-.teamClass{
-  display:flex;
-  flex-direction:column;
-  text-align: left; 
+.teamClass {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
   width: 363px;
   height: 370px;
-  margin-top:23px;
-  margin-bottom:40px;
+  margin-top: 23px;
+  margin-bottom: 40px;
 }
 
-.teamModal{
+.teamModal {
   height: 120px;
   flex-shrink: 0;
   border-radius: 0px 0px 10px 10px;
-  background: #CC5B67;
+  background: #cc5b67;
 }
 
-
-
-.textContainer{
-  margin-top:13px;
-  margin-left:11px;
+.textContainer {
+  margin-top: 13px;
+  margin-left: 11px;
 }
 
-.teamClassText{
+.teamClassText {
   max-width: 315px;
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings: "clig" off, "liga" off;
   font-size: 10px;
   font-style: normal;
   font-weight: 300;
   line-height: 15px;
-  margin-bottom:15px;
+  margin-bottom: 15px;
 }
 
-.team{
-  font-feature-settings: 'clig' off, 'liga' off;
+.team {
+  font-feature-settings: "clig" off, "liga" off;
   font-size: 14px;
   font-style: normal;
-  margin-top:5px;
-  margin-bottom:5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-weight: 600;
   line-height: normal;
 }
 
 /*Modal With Three Pastry Displays*/
 
-.bodyContainer{
-  display:flex;
+.bodyContainer {
+  display: flex;
   align-items: center;
-  flex-direction:column;
+  flex-direction: column;
 }
 
-.pastryDisplay{
+.pastryDisplay {
   width: 363px;
   height: 390px;
   border-radius: 10px;
-  overflow:hidden;
-  display:flex;
-  flex-direction:column;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.pastryCard{
-  height:129px;
-  width:363px;
+.pastryCard {
+  height: 129px;
+  width: 363px;
   /* border-bottom:1px solid #984A52; */
-  justify-content:center;
-  flex-direction:row;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.pastryContainer{
-  margin:12px;
-  display:flex;
+.pastryContainer {
+  margin: 12px;
+  display: flex;
 }
 
-.pastryContainer h1{
+.pastryContainer h1 {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin:0;
+  margin: 0;
 }
 
-.pastryContainer h2{
+.pastryContainer h2 {
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin:0;
+  margin: 0;
 }
 
-.pastryContainer p{
+.pastryContainer p {
   font-size: 10px;
   font-style: normal;
   font-weight: 300;
   line-height: 19px;
-  margin-top:0;
-  margin-bottom:3px;
+  margin-top: 0;
+  margin-bottom: 3px;
 }
 
-.pastryButton{
-  margin-top:8px;
+.pastryButton {
+  margin-top: 8px;
 }
 
-.pastryPeekIcon{
+.pastryPeekIcon {
   width: 106px;
   height: 106px;
   border-radius: 10px;
-  margin-right:12px;
+  margin-right: 12px;
 }
 
-
-.pastryContainer h1{
+.pastryContainer h1 {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin:0;
+  margin: 0;
 }
 
 /* For split cards -- side by side */
 
-.pastryWidgetContainer{
-  display:flex;
-  margin-top: 40px;
-  justify-content:space-between;
+.pastryWidgetContainer {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
   width: 362px;
   flex-direction: row;
   height: 316px;
@@ -205,70 +206,70 @@ h1, h2, h3, h4 ,h5, p, button{
 
 .dark-theme .pastryWidget {
   background-color: #444444;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .light-theme .pastryWidget {
-  background-color: #CC5B67;
-  color: #FFFFFF;
+  background-color: #cc5b67;
+  color: #ffffff;
 }
 
-.pastryWidget{
-  width:170px;
-  border-radius:10px;
-  background-color:#CC5B67;
+.pastryWidget {
+  width: 173px;
+  border-radius: 10px;
+  background-color: #cc5b67;
   height: 316px;
 }
 
-.pastryWidgetText{
-  color: #FFF;
-  font-feature-settings: 'clig' off, 'liga' off;
+.pastryWidgetText {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
   font-family: SF Pro Text;
   font-size: 10px;
   font-style: normal;
   font-weight: 300;
   line-height: 19px; /* 190% */
   letter-spacing: -0.165px;
-  margin-left:5px;
+  margin-left: 12px;
+  margin-top: 3px;
 }
 
-.pastryWidget p{
-  font-size:10px;
+.pastryWidget p {
+  font-size: 10px;
 }
-.pastryWidget h1{
-  font-size:14px;
+.pastryWidget h1 {
+  font-size: 14px;
 }
-.pastryWidget h2{
-  font-size:12px;
-  margin-bottom:10px;
+.pastryWidget h2 {
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
-.widgetPhoto{
-  width:100%;
-  border-radius:10px 10px 0 0;
+.widgetPhoto {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
   height: 158px;
 }
 
-.widgetButton{
+.widgetButton {
   width: 81.638px;
   height: 28px;
   flex-shrink: 0;
 }
 
-.widgetDescription{
-  width:149px;
+.widgetDescription {
+  width: 149px;
 }
 
-  .no-border{
-    border:none;
-  }
-
-@import url('Horizontal.css');
-
-.no-border{
-  border:none;
-  border-radius:0 0  10px 10px;
+.no-border {
+  border: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("Horizontal.css");
 
+.no-border {
+  border: none;
+  border-radius: 0 0 10px 10px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
