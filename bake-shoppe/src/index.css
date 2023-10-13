@@ -1,17 +1,9 @@
-/* * {
+body{
+  margin:0;
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  max-width:393px;
-  min-width:393px;
-  display:flex;
-  flex-direction:column;
-} */
+  padding:0;
+  font-family: 'Roboto';
+}
 
 .light-theme, .dark-theme {
   transition: all 300ms ease;
@@ -40,15 +32,15 @@
 .navbar {
   width: 100%;
   height: 60px;
-  margin-top: 5px;
+  margin-top: -1px;
   flex-shrink: 0;
   display: flex;
   justify-content: space-between;
-  position: fixed; /* Fixes navbar to the top of the page */
-  top: 0; /* Anchors navbar to the top */
-  left: 0; /* Anchors navbar to the left, ensuring it spans the full width */
-  background-color: #fff; /* Add a background color to make the navbar content stand out */
-  z-index: 1000; /* Optional: raises the navbar above other elements */
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  background-color: #fff; 
+  z-index: 1000; 
 }
 
 .navbar-left {
@@ -115,32 +107,40 @@ ul{
   margin-left: 15px;
   height: 91px;
   flex-shrink: 0;
+  margin-top: 30px;
+}
+
+
+.footer > li{
+  margin-top: 10px;
 }
 
 .dark-mode li {
   color: #ffffff;
 }
 
-About {
-  margin: 10px;
+li.About {
+  margin-bottom: 20px;
   Width: 66px;
   height: 19px;
   Top: 1887px;
   Left: 53px;
 }
 
-.Contact {
+li.Contact {
   Width: 59px;
   height: 19px;
   Top: 1925px;
   Left: 53px;
+  margin-top: 20px;
 }
 
-.Careers {
+li.Careers {
   Width: 58px;
   height: 19px;
   Top: 1965px;
   Left: 53px;
+  margin-top: 20px;
 }
 
 .Store {
@@ -148,6 +148,7 @@ About {
   height: 19px;
   Top: 2003px;
   Left: 53px;
+  margin-top: 20px;
 }
 
 .Policy {
@@ -155,6 +156,7 @@ About {
   height: 19px;
   Top: 2042px;
   Left: 53px;
+  margin-top: 20px;
 }
 
 
@@ -163,18 +165,30 @@ About {
   height: 19px;
   Top: 2081px;
   Left: 53px;
+  margin-top: 20px;
 }
 
-
-.footer .About {
-  Width: 66px;
-  height: 19px;
-  Top: 1887px;
-  Left: 53px;
-}
 
 .logo {
   width: 103px;
   height: 60px;
   flex-shrink: 0;
+  margin-top: 7px;
+}
+
+
+.navbar-light {
+  background-color: #F9F9F9;
+}
+
+.navbar-dark {
+  background-color: #222222;
+}
+
+.footer-light {
+  background-color: #FFFFFF;
+}
+
+.footer-dark {
+  background-color: #222;
 }

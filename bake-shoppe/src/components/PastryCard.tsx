@@ -20,7 +20,7 @@ const PastryCard: React.FC<PastryCardProps> = ({photo, name, description, price,
                 <h1>{name}</h1>
                 <p>{description}</p>
                 <h2>${price}</h2>
-                <button className={`buttonClass ${theme}`}>Add To Card</button>
+                <button className={`buttonClass ${theme}`}>Add To Cart</button>
             </div>
         </div>
     </div>

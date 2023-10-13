@@ -24,9 +24,13 @@ h1, h2, h3, h4 ,h5, p, button{
 }
 
 .dark-theme .buttonClass{
-  color: white;
+  color: #ffffff;
+  background-color: #222222;
 }
 
+.pastryContainer .buttonClass{
+  margin-top: 10px;
+}
 
 
 .buttonClass{
@@ -185,6 +189,16 @@ h1, h2, h3, h4 ,h5, p, button{
   height: 316px;
   align-items: center;
   flex-shrink: 0;
+}
+
+.dark-theme .pastryWidget {
+  background-color: #444444;
+  color: #FFFFFF;
+}
+
+.light-theme .pastryWidget {
+  background-color: #CC5B67;
+  color: #FFFFFF;
 }
 
 .pastryWidget{
