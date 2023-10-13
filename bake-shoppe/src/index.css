@@ -47,20 +47,20 @@
   position: fixed; /* Fixes navbar to the top of the page */
   top: 0; /* Anchors navbar to the top */
   left: 0; /* Anchors navbar to the left, ensuring it spans the full width */
-  background-color: #fff; /* Add a background color to make the navbar content stand out */
   z-index: 1000; /* Optional: raises the navbar above other elements */
 }
 
 .navbar-left {
-display: flex;
-width: 50%px;
+width: 50%;
 height: 37px;
+align-self: self-start;
 }
 
 
 .navbar-right{
-margin: 18px 16px 12px;
-position: relative;
+width: auto;
+height: revert-layer;
+
 }
 
 .switch {
