@@ -17,9 +17,11 @@
 }
 
 .slider-circle.dark {
-    left: 2px; /* Position for the dark theme */
+    left: 1px; /* Position for the dark theme */
+    opacity: 50%;
 }
 
 .slider-circle.light {
-    left: 34px; /* Position for the light theme */
+    left: 35px; /* Position for the light theme */
+    opacity: 50%;
 }
