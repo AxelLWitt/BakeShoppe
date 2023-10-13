@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <div className="navbar" >
+      <div className={`navbar ${theme === 'dark' ? 'navbar-dark' : 'navbar-light'}`} >
         <div className='navbar-left' >
           <img className='logo' src="/images/image 4.png" alt="logo" />
         </div>
