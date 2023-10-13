@@ -1,5 +1,6 @@
 import React from "react";
 import { useTheme } from "./ThemeContext";
+import "./switch.css";
 
 const DarkModeSVG = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="30" viewBox="0 0 64 30" fill="none">
@@ -43,8 +44,9 @@ const Switch = () => {
     const { theme, toggleTheme } = useTheme();
 
     return (
-        <div className="switch" onClick={toggleTheme}>
+        <div className="switch-container" onClick={toggleTheme}>
             {theme === "dark" ? <DarkModeSVG /> : <LightModeSVG />}
+            <div className={`slider-circle ${theme}`}></div>
         </div>
     );
 };

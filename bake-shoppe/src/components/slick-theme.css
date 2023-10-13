@@ -102,6 +102,7 @@
 }
 .slick-next:before
 {
+    display:none;
     content: '→';
 }
 [dir='rtl'] .slick-next:before

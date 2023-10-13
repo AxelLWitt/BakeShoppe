@@ -17,15 +17,27 @@ h1, h2, h3, h4 ,h5, p, button{
   margin:0;
   color:#fff;
 }
+
 /*Global Modifiers*/
+
 
 .light-theme .buttonClass{
   color: #000000;
 }
 
+.light-theme .buttonClass:active{
+  background-color:pink;
+  color:white;
+}
+
 .dark-theme .buttonClass{
   color: #ffffff;
   background-color: #222222;
+}
+
+.dark-theme .buttonClass:active{
+  color: black;
+  background:white;
 }
 
 .pastryContainer .buttonClass{
@@ -115,7 +127,7 @@ h1, h2, h3, h4 ,h5, p, button{
   width: 363px;
   height: 390px;
   border-radius: 10px;
-  /* background: #CC5B67;; */
+  overflow:hidden;
   display:flex;
   flex-direction:column;
 }
@@ -255,6 +267,7 @@ h1, h2, h3, h4 ,h5, p, button{
 
 .no-border{
   border:none;
+  border-radius:0 0  10px 10px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
