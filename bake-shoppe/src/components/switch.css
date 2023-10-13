@@ -1,0 +1,25 @@
+.switch-container {
+    width: 64px; /* Width of the SVG */
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slider-circle {
+    width: 28px; /* Approx width of the circle in the SVG */
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px; /* Centering the circle vertically */
+    transition: left 0.3s ease-in-out;
+}
+
+.slider-circle.dark {
+    left: 2px; /* Position for the dark theme */
+}
+
+.slider-circle.light {
+    left: 34px; /* Position for the light theme */
+}
