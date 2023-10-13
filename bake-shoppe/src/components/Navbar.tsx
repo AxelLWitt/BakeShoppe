@@ -6,12 +6,11 @@ export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const [itemCount, setItemCount] = useState(0); // Cart state
   const [svgCounter, setSvgCounter] = useState(0); // SVG counter state
-  
-  // get the count from add to cart and pass it to my app level so that when someone adds to cart, 
-  // theres going to be a setter that exists in my app level thats going to set the items in cart and then the cart value is pass as
-  //  a prop into my navbar
 
-
+  const handleAddToCart = () => {
+    setItemCount(prevCount => prevCount + 1);
+    setSvgCounter(prevCounter => (prevCounter + 1) % 4); // Assuming there are 4 SVGs (0, 1, 2, 3)
+  };
 
   const renderSvg = () => {
     const commonProps = {
@@ -223,6 +222,7 @@ export default function Navbar() {
       <div className="navbar-right">
         <div className="cart-icon">
           {renderSvg()}
+          <button onClick={handleAddToCart}>Add to Cart</button>
           <Switch></Switch>
         </div>
       </div>

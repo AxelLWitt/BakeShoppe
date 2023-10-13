@@ -17,7 +17,7 @@ const MainTeam: React.FC = () => {
           <div className='textContainer'>
             <h1 className='team'>Baked Fresh Daily with Love</h1>
             <p className={`${teamClassText}`}>Honey-sweetened sourdough roll studded with hazelnuts, cranberries, dates, and seeds.</p>
-            <button className={`${buttonClass}`}>Find a Store</button>
+            <button className={`buttonClass ${theme}`}>Find a Store</button>
           </div>
         </div>
     </div>
